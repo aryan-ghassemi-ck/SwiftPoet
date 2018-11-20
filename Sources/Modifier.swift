@@ -32,7 +32,7 @@ open class Modifier: NSObject {
     public static let Override = Modifier(rawString: "override")
     public static let Required = Modifier(rawString: "required")
 
-    open override var hashValue: Int {
+    open override var hash: Int {
         return rawString.hashValue
     }
 
