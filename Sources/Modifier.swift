@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class Modifier: NSObject {
+open final class Modifier: NSObject {
 
     public let rawString: String
 
