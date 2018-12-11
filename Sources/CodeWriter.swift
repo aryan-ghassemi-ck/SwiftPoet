@@ -226,7 +226,7 @@ extension CodeWriter {
             return self
         }
 
-        let modListStr = Array(toEmit).map { m in
+        let modListStr = toEmit.sortedByGuidelines().map { m in
             return m.rawString
         }.joined(separator: " ") + " "
 
