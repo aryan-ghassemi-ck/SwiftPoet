@@ -93,3 +93,23 @@ open class Modifier: NSObject {
 public func ==(lhs: Modifier, rhs: Modifier) -> Bool {
     return lhs.rawString == rhs.rawString
 }
+
+extension Modifier {
+    /// Guidelines could be found in Swift sources and libraries like SwiftFormat
+    fileprivate static let guidelinesOrder: [Modifier] = [
+        .Private, .Fileprivate, .Internal, .Public, .Open,
+        .Final,
+        .Required,
+        .Convenience,
+        .Override,
+        .Static, .Klass,
+        .Mutating,
+        .Throws
+    ]
+}
+
+extension Collection where Iterator.Element == Modifier {
+    public func sortedByGuidelines() -> [Modifier] {
+        return Modifier.guidelinesOrder.filter { self.contains($0) }
+    }
+}
