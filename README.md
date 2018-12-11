@@ -17,7 +17,7 @@ This is the `master` branch. It uses **Swift 4.1** and **requires Xcode 9.3** to
 
 Branch|Build status
 --------|------------------------
-[`master`](https://github.com/gilt/SwiftPoet)|[![Build status: master branch](https://travis-ci.org/gilt/SwiftPoet.svg?branch=master)](https://travis-ci.org/gilt/SwiftPoet)
+[`master`](https://github.com/gilt/SwiftPoet)|[![Build status: master branch](https://travis-ci.org/saksdirect/SwiftPoet.svg?branch=master)](https://travis-ci.org/saksdirect/SwiftPoet)
 
 
 ### License
