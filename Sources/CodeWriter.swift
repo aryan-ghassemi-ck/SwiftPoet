@@ -136,7 +136,7 @@ extension CodeWriter {
         -> CodeWriter
     {
         if (toEmit.count > 0) {
-            let importString = toEmit.joined(separator: "\nimport ")
+            let importString = toEmit.sorted().joined(separator: "\nimport ")
             _out.append(contentsOf: "import ")
             _out.append(contentsOf: importString)
             _out.append(contentsOf: "\n\n")
