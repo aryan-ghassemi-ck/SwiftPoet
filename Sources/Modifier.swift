@@ -8,7 +8,7 @@
 
 import Foundation
 
-open final class Modifier: NSObject {
+public final class Modifier: NSObject {
 
     public let rawString: String
 
@@ -32,7 +32,7 @@ open final class Modifier: NSObject {
     public static let Override = Modifier(rawString: "override")
     public static let Required = Modifier(rawString: "required")
 
-    open override var hash: Int {
+    public override var hash: Int {
         return rawString.hashValue
     }
 
