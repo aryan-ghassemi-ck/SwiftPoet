@@ -195,8 +195,8 @@ public func ==(lhs: TypeName, rhs: TypeName) -> Bool {
 }
 
 extension TypeName: Hashable {
-    public var hashValue: Int {
-        return toString().hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(toString())
     }
 }
 

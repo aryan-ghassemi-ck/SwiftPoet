@@ -28,28 +28,28 @@ open class CodeWriter: NSObject {
 public extension CodeWriter
 {
     @discardableResult
-    public func indent()
+    func indent()
         -> CodeWriter
     {
         return indent(1)
     }
 
     @discardableResult
-    public func indent(_ levels: Int)
+    func indent(_ levels: Int)
         -> CodeWriter
     {
         return indentLevels(levels)
     }
 
     @discardableResult
-    public func unindent()
+    func unindent()
         -> CodeWriter
     {
         return unindent(1)
     }
 
     @discardableResult
-    public func unindent(_ levels: Int)
+    func unindent(_ levels: Int)
         -> CodeWriter
     {
         return indentLevels(-levels)
