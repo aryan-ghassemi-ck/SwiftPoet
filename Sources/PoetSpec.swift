@@ -64,8 +64,8 @@ public func ==(lhs: PoetSpec, rhs: PoetSpec) -> Bool {
 }
 
 extension PoetSpec: Hashable {
-    public var hashValue: Int {
-        return self.toString().hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(toString())
     }
 }
 

@@ -71,8 +71,8 @@ public func ==(lhs: CodeBlock, rhs: CodeBlock) -> Bool {
 }
 
 extension CodeBlock: Hashable {
-    public var hashValue: Int {
-        return toString().hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(toString())
     }
 }
 
